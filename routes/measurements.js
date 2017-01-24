@@ -17,7 +17,7 @@ dbconn.connect(function(err){
   }
 });
 
-/* GET users listing. */
+/* GET measurements listing. */
 router.get('/', function(req, res, next) {
   dbData = new Promise(
       (resolve, reject) => {
@@ -25,7 +25,7 @@ router.get('/', function(req, res, next) {
           if(err) throw err;
 
           console.log('Data received from Db:n');
-          console.log(records);
+          // console.log(records);
           resolve(records);
         });
       }
