@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('./app2');
+var app = require('./server/server');
 var debug = require('debug')('bme-solar-boat:server');
 var http = require('http');
 
